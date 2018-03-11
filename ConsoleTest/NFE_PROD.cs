@@ -2,7 +2,6 @@
 {
     public class NFE_PROD
     {
-        public string _chaveNfe { get; set; }
         public string _cProd { get; set; }
         public string _cEAN { get; set; }
         public string _xProd { get; set; }
@@ -18,6 +17,8 @@
         public string _vUnTrib { get; set; }
         public string _indTot { get; set; }
         public string _vTotTrib { get; set; }
+        public string _cest { get; set; }
+        public string _vfrete { get; set; }
 
         public NFE_PROD_COFINS COFINS { get; set; }
         public NFE_PROD_ICMS ICMS { get; set; }

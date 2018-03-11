@@ -51,7 +51,7 @@ namespace ConsoleTest
 
         private static List<string> ReadDirectory()
         {
-            string[] fileEntries = Directory.GetFiles("C:\\100XML");
+            string[] fileEntries = Directory.GetFiles("C:\\50XML");
             return fileEntries.ToList();
         }
 
@@ -74,8 +74,33 @@ namespace ConsoleTest
                     _ieEmit = file.NFe.infNFe.emit.IE,
                     _imEmit = file.NFe.infNFe.emit.IM,
                     _razaoDest = file.NFe.infNFe.dest.xNome,
-                    _razaoEmit = file.NFe.infNFe.emit.xNome
+                    _razaoEmit = file.NFe.infNFe.emit.xNome,
+                    _NumeroNF = file.NFe.infNFe.ide.nNF.ToString()
                 };
+
+                foreach (var item in file.NFe.infNFe.det)
+                {
+                    novoDocumento.NFE_PROD.Add(new NFE_PROD
+                    {
+                        _cEAN = item.prod.cEAN,
+                        _cEANTrib = item.prod.cEANTrib,
+                        _cest = item.prod.CEST,
+                        _CFOP = item.prod.CFOP.ToString(),
+                        _cProd = item.prod.cProd,
+                        _NCM = item.prod.NCM,
+                        _qCom = item.prod.qCom.ToString(),
+                        _qTrib = item.prod.qTrib.ToString(),
+                        _uCom = item.prod.uCom.ToString(),
+                        _indTot = item.prod.indTot.ToString(),
+                        _uTrib = item.prod.uTrib,
+                        _vfrete = item.prod.vFrete.ToString(),
+                        _vUnTrib = item.prod.vUnTrib.ToString(),
+                        _vProd = item.prod.vProd.ToString(),
+                        _vUnCom = item.prod.vUnCom.ToString(),
+                        _xProd = item.prod.xProd
+
+                    });
+                }
 
                 listaDeDocumentos.Add(novoDocumento);
             });

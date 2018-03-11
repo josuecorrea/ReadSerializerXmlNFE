@@ -10,5 +10,7 @@ namespace ConsoleTest
         public string _vBC { get; set; }
         public string _pPIS { get; set; }
         public string _vPIS { get; set; }
+        public string _pCOFINS { get; set; }
+        public string vCOFINS { get; set; }
     }
 }

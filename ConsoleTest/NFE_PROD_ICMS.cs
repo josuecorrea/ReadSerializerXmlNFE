@@ -15,5 +15,10 @@ namespace ConsoleTest
         public string _vICMS { get; set; }
         public string _vBCSTRet { get; set; }
         public string _vICMSSTRet { get; set; }
+        public string _modBCST { get; set; }
+        public string _pMVAST { get; set; }
+        public string _vBCST { get; set; }
+        public string _pICMSST { get; set; }
+        public string _vICMSST { get; set; }
     }
 }
