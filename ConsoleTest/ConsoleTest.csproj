@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DFe.Classes">
+      <HintPath>..\..\..\..\Tutoriais\DFe.NET-master\DFe.Classes\bin\Debug\DFe.Classes.dll</HintPath>
+    </Reference>
+    <Reference Include="DFe.Utils">
+      <HintPath>..\..\..\..\Tutoriais\DFe.NET-master\NFe.Classes\bin\Debug\DFe.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.Classes">
+      <HintPath>..\..\..\..\Tutoriais\DFe.NET-master\NFe.Classes\bin\Debug\NFe.Classes.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
